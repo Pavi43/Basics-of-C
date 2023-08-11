@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+float a,b;
+printf("Enter the first number:");
+scanf("%f",&a);
+printf("Enter the second number:");
+scanf("%f",&b);
+printf("The number you entered is %.2f and %.3f ",a,b);
+return;
+}`
