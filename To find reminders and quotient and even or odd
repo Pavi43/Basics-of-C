@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the first number:");
+    scanf("%d",&a);
+    b=a%2;
+    c=a/2;
+    printf("The Reminder is  %d",b);
+    printf("\nThe quotient is  %d",c);
+    if(b=0)
+    {
+        printf("\nThe given number %d is even",a);
+    }
+    else
+    {
+        printf("\nThe given number %d is odd",a);
+    }
+    return;
+}
