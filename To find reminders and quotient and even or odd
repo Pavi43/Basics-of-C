@@ -18,3 +18,21 @@ int main()
     }
     return;
 }
+
+
+//To get both divisor and divident from the use:
+
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("Enter a divisor:");
+    scanf("%d",&a);
+    printf("Enter the divident:");
+    scanf("%d",&d);
+    b=d%a;
+    printf("\nReminder is %d",b);
+    c=d/a;
+    printf("\nQuotient is %d",c);
+    return;
+}
