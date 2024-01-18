@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    int a, b;
+    printf("Enter the Cost Price:");
+    scanf("%d", &a);
+    
+    if (a >= 0 && a <= 500) {
+        b = (a * 10) / 100 + a;
+        printf("The total bill is %d", b);
+    } else if (a > 500 && a <= 1000) {
+        b = (a * 15) / 100 + a;
+        printf("The total bill is %d", b);
+    } else {
+        b = (a * 18) / 100 + a;
+        printf("The total bill is %d", b);
+    }
+    
+    return 0;
+}
