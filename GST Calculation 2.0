@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, c;
+    float b, d, e;
+    printf("Enter 0 for S.p or 1 for C.p:");
+    scanf("%d", &a);
+    printf("Enter the amount:");
+    scanf("%f", &b);
+    printf("Enter 3 for Profit or 4 for loss:");
+    scanf("%d", &c);
+    printf("Enter the Percentage:");
+    scanf("%f", &d);
+
+    if (a == 1 && c == 3)
+    {
+        e = b / (100 + d) * 100;
+        printf("The C.p with profit %.2f", e);
+    }
+    else if (a == 1 && c == 4)
+    {
+        e = b / (100 - d) * 100;
+        printf("The C.p with loss %.2f", e);
+    }
+    else if (a == 0 && c == 3)
+    {
+        e = b * (100 + d) / 100;
+        printf("The S.p with profit is %.2f", e);
+    }
+    else if (a == 0 && c == 4)
+    {
+        e = b * (100 - d) / 100;
+        printf("The S.p with loss is %.2f", e);
+    }
+    else
+    {
+        printf("Enter Valid Input");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+Output:
+Enter 0 for S.p or 1 for C.p:0
+Enter the amount:12000
+Enter 3 for Profit or 4 for loss:4
+Enter the Percentage:50
+The S.p with loss is 6000.00
